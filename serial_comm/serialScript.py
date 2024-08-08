@@ -2,7 +2,7 @@ import serial
 import time
 
 #Set prompt for possible objectives
-prompt = "Please input one of the following commands:\n - Find Sun \n - Reset"
+prompt = "Please input one of the following commands:\n - Find Sun \n - Reset \n - Light"
 
 # Set up the serial connection to the Arduino
 arduino = serial.Serial('/dev/ttyUSB0', 9600, timeout=2)
@@ -19,9 +19,9 @@ def send_command(command):
 	confirmation = arduino.readline().decode('utf-8').strip()
 
 	if response:
-	print("Response from Arduino:", response)
+		print("Response from Arduino:", response)
 	else:
-	print("No response received")
+		print("No response received")
 
 
 while True:

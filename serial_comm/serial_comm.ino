@@ -18,9 +18,12 @@ void handleSerialCommunication() {
 			Serial.println(findSun);
 		}else if (command == "Reset"){
 			Serial.println(reset);
+		}else if (command = "Light"){
+			Serial.println(getLightLevel());
 		}else{
 			Serial.println("Error, mistype");
 		}
+		delay(250);
 	}	
 	
 	// Flush the Serial buffer to avoid leftover data input 

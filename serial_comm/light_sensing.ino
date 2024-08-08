@@ -10,25 +10,32 @@ void setupLightSensing(){
 }
 
 void handleLightSensingCommunication(){
-	
-	//initialize reading in from photocell and mapping the sensor range to a range of four options of brightness
-	int analogValue = analogRead(photoCellPin0);
-	int range = map(analogValue, sensorMin, sensorMax, 0, 3);
+		
+}
 
-	switch (range){
+String getLightLevel(){
+	int analogValue = analogRead(photoCellPin0);  // Read the analog value from the sensor
+	int range = map(analogValue, sensorMin, sensorMax, 0, 3);  // Map sensor value to a range
+
+	String lightLevel;
+
+	switch (range) {
 		case 0:
-			Serial.println("Dark");
+			lightLevel = "Dark: " + String(analogValue);  // Bright light
 			break;
 		case 1:
-			Serial.println("Dim");
+			lightLevel = "Low: " + String(analogValue);  // Moderate light
 			break;
-		case 2: 
-			Serial.println("Medium");
+		case 2:
+			lightLevel = "Medium: " + String(analogValue);  // Low light
 			break;
 		case 3:
-			Serial.println("Bright");
+			lightLevel = "Bright: " + String(analogValue);  // Darkness
 			break;
-	}
-	//give time to reset system vals
-	delay(250);		
+		default:
+			lightLevel = "Error: " + String(analogValue);
+			break;
+		}
+
+	return lightLevel;
 }

@@ -3,5 +3,6 @@
 
 void setupLightSensing();
 void handleLightSensingCommunication();
+String getLightLevel();
 
 #endif
