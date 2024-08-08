@@ -21,7 +21,3 @@ This project was originally created in July 2022, however, I have since learned 
 6. Integration and Communication
     - Hybrid System (Raspberry Pi + Arduino): Use a combined setup for hardware control and data processing.
     - Seamless Communication: Ensure reliable data exchange between components.
-
-# To Do:
-1. Fix SSH to make sure I can actually edit the thing
-2. 
