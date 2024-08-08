@@ -14,7 +14,7 @@ void handleLightSensingCommunication(){
 }
 
 String getLightLevel(){
-	int analogValue = analogRead(photoCellPin0);  // Read the analog value from the sensor
+	double analogValue = analogRead(photoCellPin0);  // Read the analog value from the sensor
 	int range = map(analogValue, sensorMin, sensorMax, 0, 3);  // Map sensor value to a range
 
 	String lightLevel;
