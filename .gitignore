@@ -15,6 +15,7 @@ ssh.pub
 
 # Arduino IDE configuration files
 .arduino15/
+.local/share/nano
 
 # Compiled binaries or build artifacts
 bin/
