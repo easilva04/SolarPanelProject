@@ -6,12 +6,11 @@ arduino = serial.Serial('/dev/ttyUSB0', 9600, timeout=1)
 time.sleep(2)  # Wait for the connection to be established
 
 while True:
-    # Send data to the Arduino
-    arduino.write(b'Hello Arduino!\n')
-    
-    # Read the response from Arduino
-    data = arduino.readline().decode('utf-8').rstrip()
+    # Read a line from serial port
+    data = arduino.readline().decode('utf-8').strip()
+
+    #if line not empty, print it
     if data:
-        print(f"Received from Arduino: {data}")
+        print(f"Received: {data}")
     
-    time.sleep(1)  # Wait for a second before sending the next message
+    time.sleep(0.5)  # Wait for a second before sending the next message
