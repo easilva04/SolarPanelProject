@@ -26,3 +26,10 @@ This project was originally created in July 2022, however, I have since learned 
 6. Integration and Communication
     - [x] Hybrid System (Raspberry Pi + Arduino): Use a combined setup for hardware control and data processing.
     - [x] Seamless Communication: Ensure reliable data exchange between components.
+
+# Proof:
+8/8/2024 - Prototype with two working solar cells implemented
+
+<img src="https://github.com/user-attachments/assets/73f7f326-c8b0-420e-9000-744e345c970b" width="50%" height="50%">
+
+
