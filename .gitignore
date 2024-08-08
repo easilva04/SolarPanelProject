@@ -12,3 +12,9 @@
 .ssh/known_hosts.old
 ssh
 ssh.pub
+
+# Arduino IDE configuration files
+.arduino15/
+
+# Compiled binaries or build artifacts
+bin/
