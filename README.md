@@ -29,6 +29,7 @@ This project was originally created in July 2022, however, I have since learned 
 
 # Proof:
 8/8/2024 - Prototype with two working solar cells implemented
+- Each sensor is wired to common power input and ground as well as wired to their own voltage divider circuits to have a relative comparison to read from the photo resistor
 
 <img src="https://github.com/user-attachments/assets/73f7f326-c8b0-420e-9000-744e345c970b" width="50%" height="50%">
 
