@@ -1,5 +1,10 @@
 # Solar Panel Project
 This project was originally created in July 2022, however, I have since learned much more in my EE and CS curriculum, and I wish to implement what I have learned
+- In the original creation I could follow the light every 2 minutes, and rather crudely. I intend to fix this to be smooth and constant
+# To do:
+1. Make arduino work
+   - Wire breadboard with pv sensors to read in light amount
+   - Design housing using SolidWorks and then 3d print for arduino and pv sensors
 
 # Goals
 1. Follow the sun (duh)
