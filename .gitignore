@@ -1,5 +1,14 @@
+
+# Ignore original creation files
 .bash_logout
 .bashrc
 .gitconfig
 .profile
 .sudo_as_admin_successful
+
+# Ignore SSH keys and related files
+.ssh/id_rsa
+.ssh/id_rsa.pub
+.ssh/known_hosts.old
+ssh
+ssh.pub
