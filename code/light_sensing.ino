@@ -22,7 +22,9 @@ void handleLightSensing(){
 }
 
 void handleReset(){
-	//TODO: set motors to face [45][0] to point straight up
+	int resetPitch = 45;
+	int resetYaw = 0;
+	//TODO: set motors to face [resetPitch][resetYaw] to point straight up
 }
 
 String getLightLevel(){
