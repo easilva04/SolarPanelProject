@@ -13,10 +13,10 @@ void setupLightSensing(){
 }
 
 void handleLightSensing(){
-	int photoCell0Arr[90][360]; // Pitch, Yaw 
-	int photoCell1Arr[90][360];
-	int photoCell2Arr[90][360];
-	int photoCell3Arr[90][360];
+	int photoCell0Arr[45][90]; // Pitch, Yaw 
+	int photoCell1Arr[45][90];
+	int photoCell2Arr[45][90];
+	int photoCell3Arr[45][90];
 
 	//TODO: do a spin and input 0-800 into [0][i] for each cell
 }
