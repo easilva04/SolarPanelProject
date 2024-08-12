@@ -21,6 +21,10 @@ void handleLightSensing(){
 	//TODO: do a spin and input 0-800 into [0][i] for each cell
 }
 
+void handleReset(){
+	//TODO: set motors to face [45][0] to point straight up
+}
+
 String getLightLevel(){
 	double analogValue = analogRead(photoCellPin0);  // Read the analog value from the sensor
 	int range = map(analogValue, sensorMin, sensorMax, 0, 3);  // Map sensor value to a range
@@ -29,19 +33,19 @@ String getLightLevel(){
 
 	switch (range) {
 		case 0:
-			lightLevel = "Dark: " + String(analogValue);  // Bright light
+			lightLevel = "Dark: " + String(analogValue);  // Dark 
 			break;
 		case 1:
-			lightLevel = "Low: " + String(analogValue);  // Moderate light
+			lightLevel = "Low: " + String(analogValue);  // Low light
 			break;
 		case 2:
-			lightLevel = "Medium: " + String(analogValue);  // Low light
+			lightLevel = "Medium: " + String(analogValue);  // Medium light
 			break;
 		case 3:
-			lightLevel = "Bright: " + String(analogValue);  // Darkness
+			lightLevel = "Bright: " + String(analogValue);  // Bright light
 			break;
 		default:
-			lightLevel = "Error: " + String(analogValue);
+			lightLevel = "Error: " + String(analogValue); // Error when grabbing light number -> should never happen
 			break;
 		}
 

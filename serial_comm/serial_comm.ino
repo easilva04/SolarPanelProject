@@ -16,8 +16,10 @@ void handleSerialCommunication() {
 		
 		if(command == "Find Sun"){
 			Serial.println(findSun);
+			handleLightSensing();
 		}else if (command == "Reset"){
 			Serial.println(reset);
+			handleReset();
 		}else if (command = "Light"){
 			Serial.println(getLightLevel());
 		}else{

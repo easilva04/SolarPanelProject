@@ -10,4 +10,5 @@ void setup() {
 void loop() {
 	handleSerialCommunication();
 	handleLightSensing();
+	hanldeReset();
 }
