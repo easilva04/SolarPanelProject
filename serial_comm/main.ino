@@ -9,5 +9,5 @@ void setup() {
 
 void loop() {
 	handleSerialCommunication();
-	handleLightSensingCommunication();
+	handleLightSensing();
 }
