@@ -4,13 +4,21 @@
 const int sensorMin = 0;
 const int sensorMax = 800;
 const int photoCellPin0 = A0;
+const int photoCellPin1 = A1;
+const int photoCellPin2 = A2;
+const int photoCellPin3 = A3;
 
 void setupLightSensing(){ 
 	Serial.begin(9600); 
 }
 
-void handleLightSensingCommunication(){
-		
+void handleLightSensing(){
+	int photoCell0Arr[90][360]; // Pitch, Yaw 
+	int photoCell1Arr[90][360];
+	int photoCell2Arr[90][360];
+	int photoCell3Arr[90][360];
+
+	//TODO: do a spin and input 0-800 into [0][i] for each cell
 }
 
 String getLightLevel(){

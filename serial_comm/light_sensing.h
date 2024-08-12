@@ -2,7 +2,7 @@
 #define LIGHT_SENSING_H
 
 void setupLightSensing();
-void handleLightSensingCommunication();
+void handleLightSensing();
 String getLightLevel();
 
 #endif
