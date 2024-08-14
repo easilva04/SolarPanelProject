@@ -29,22 +29,23 @@ void handleReset(){
 
 String getLightLevel(){
 	double analogValue = analogRead(photoCellPin0);  // Read the analog value from the sensor
-	int range = map(analogValue, sensorMin, sensorMax, 0, 3);  // Map sensor value to a range
-
-	String lightLevel;
+	int range = map(analogValue, sensorMin, sensorMax, 0, 4);  // Map sensor value to a range
 
 	switch (range) {
 		case 0:
-			lightLevel = "Dark: " + String(analogValue/sensorMax * 100) + "%";  // Dark 
+			lightLevel = "Dark: " + String((analogValue/ (float)sensorMax) * 100, 2) + "%";  // Dark 
 			break;
 		case 1:
-			lightLevel = "Low: " + String(analogValue/sensorMax * 100) + "%";  // Low light
+			lightLevel = "Low: " + String((analogValue/ (float)sensorMax) * 100, 2) + "%";  // Low light
 			break;
 		case 2:
-			lightLevel = "Medium: " + String(analogValue/sensorMax * 100) + "%";  // Medium light
+			lightLevel = "Medium: " + String((analogValue/ (float)sensorMax) * 100, 2) + "%";  // Medium light
 			break;
 		case 3:
-			lightLevel = "Bright: " + String(analogValue/sensorMax * 100) + "%";  // Bright light
+			lightLevel = "Bright: " + String((analogValue/ (float)sensorMax) * 100, 2) + "%";  // Bright light
+			break;
+		case 4:
+			lightLevel = "Maximum: " + String((analogValue/ (float)sensorMax) * 100, 2) + "%";  // Max or near max light
 			break;
 		default:
 			lightLevel = "Error: " + String(analogValue); // Error when grabbing light number -> should never happen
