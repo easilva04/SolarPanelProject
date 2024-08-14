@@ -30,7 +30,8 @@ void handleReset(){
 String getLightLevel(){
 	double analogValue = analogRead(photoCellPin0);  // Read the analog value from the sensor
 	int range = map(analogValue, sensorMin, sensorMax, 0, 5);  // Map sensor value to a range
-
+	String lightLevel;
+	
 	switch (range) {
 		case 0:
 			lightLevel = "Dark: " + String((analogValue/ (float)sensorMax) * 100, 2) + "%";  // Dark 
