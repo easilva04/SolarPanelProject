@@ -4,6 +4,6 @@
 void setupLightSensing();
 void handleLightSensing();
 String getLightLevel();
-Void handleReset();
+void handleReset();
 
 #endif
