@@ -29,7 +29,7 @@ void handleReset(){
 
 String getLightLevel(){
 	double analogValue = analogRead(photoCellPin0);  // Read the analog value from the sensor
-	int range = map(analogValue, sensorMin, sensorMax, 0, 4);  // Map sensor value to a range
+	int range = map(analogValue, sensorMin, sensorMax, 0, 5);  // Map sensor value to a range
 
 	switch (range) {
 		case 0:
