@@ -2,7 +2,7 @@
 
 // Minimum and maximum values for light input
 const int sensorMin = 0;
-const int sensorMax = 800;
+const int sensorMax = 1023;
 const int photoCellPin0 = A0;
 const int photoCellPin1 = A1;
 const int photoCellPin2 = A2;
