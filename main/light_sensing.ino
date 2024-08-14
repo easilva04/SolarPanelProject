@@ -35,16 +35,16 @@ String getLightLevel(){
 
 	switch (range) {
 		case 0:
-			lightLevel = "Dark: " + String(analogValue);  // Dark 
+			lightLevel = "Dark: " + String(analogValue/sensorMax * 100) + "%";  // Dark 
 			break;
 		case 1:
-			lightLevel = "Low: " + String(analogValue);  // Low light
+			lightLevel = "Low: " + String(analogValue/sensorMax * 100) + "%";  // Low light
 			break;
 		case 2:
-			lightLevel = "Medium: " + String(analogValue);  // Medium light
+			lightLevel = "Medium: " + String(analogValue/sensorMax * 100) + "%";  // Medium light
 			break;
 		case 3:
-			lightLevel = "Bright: " + String(analogValue);  // Bright light
+			lightLevel = "Bright: " + String(analogValue/sensorMax * 100) + "%";  // Bright light
 			break;
 		default:
 			lightLevel = "Error: " + String(analogValue); // Error when grabbing light number -> should never happen
